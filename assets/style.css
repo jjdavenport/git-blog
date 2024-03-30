@@ -17,11 +17,15 @@ body {
     padding: 1rem;
 }
 
+.header a{
+    color: inherit;
+}
+
 .header h1{
     font-size: 2rem;
 }
 
-.header h1:hover {
+.header h1:hover, .header h2:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -61,6 +65,10 @@ a h4:hover {
     padding: 1rem;
     position: fixed;
     bottom: 0;
+}
+
+#img {
+    width: 1rem;
 }
 
 /* 
