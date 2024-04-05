@@ -1,79 +1,142 @@
 body {
-    font-family: "Segoe UI";
-    height: 100vh;
+  font-family: "Segoe UI";
+  height: 100vh;
 }
 
 * {
-   font-weight: 400; 
-   margin: 0;
-   padding: 0;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
+
+:root {
+  --title-color: hsl(0, 0%, 28%);
+  --date-color: hsl(0, 0%, 52%);
+  --links-color: hsl(214, 76%, 52%);
+  --links-visited-color: hsl(214, 77%, 37%);
+}
+
 
 .header {
-    border-bottom: .0625rem solid grey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+  border-bottom: 0.0625rem solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-.header a{
-    color: inherit;
+.header a {
+  color: inherit;
 }
 
-.header h1{
-    font-size: 2rem;
+.header h1 {
+  font-size: 1.5rem;
+  color: var(--title-color);
 }
 
-.header h1:hover, .header h2:hover {
-    cursor: pointer;
-    text-decoration: underline;
+.header h1:hover,
+.header h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .header h2 {
+  font-size: 1rem;
 }
 
 .links {
-    padding: 1rem;
+  padding: 1rem;
+  height: 85vh;
 }
 
 .links h3 {
-    font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .links span {
-    font-size: 1rem;
+  color: var(--date-color);
+  font-size: 1rem;
 }
 
-.links a{
-    font-size: 2rem;
+.links a {
+  font-size: 1.8rem;
+  color: var(--links-color);
+}
+
+.links a:visited {
+  color: var(--links-visited-color);
 }
 
 .content {
-    padding: 1rem;
+  padding: 1rem;
+  height: 85vh;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a h4:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer {
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
+  padding: 1rem;
+  border-top: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#img {
-    width: 1rem;
+.contact {
 }
 
-/* 
+.socials {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.footer svg {
+  margin-left: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+.footer svg path {
+  fill: grey;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+}
+
+.footer h6 {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  font-size: 0.8rem;
+}
+
+.footer h5 {
+  font-size: 1rem;
+  width: 100vw;
+}
+
+#dark-svg {
+  display: none;
+}
+
+/*
 @media (prefers-color-scheme: dark) {
   body {
     background-color: hsl(225, 6%, 13%);
+  }
+  #dark-svg {
+    display: block;
+  }
+  #normal {
+    display: none;
   }
 }
