@@ -18,6 +18,12 @@ body {
   --font-color-dark: hsl(0, 100%, 100%);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .header {
   border-bottom: 0.0625rem solid hsl(0, 0%, 92%);
   display: flex;
@@ -47,7 +53,6 @@ body {
 
 .links {
   padding: 1rem;
-  height: 85vh;
 }
 
 .links h3 {
@@ -93,6 +98,7 @@ a h4:hover {
   border-top: 0.1rem solid hsl(0, 0%, 94%);
   display: flex;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .contact a {
@@ -102,7 +108,9 @@ a h4:hover {
 .socials {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-left: 1rem;
+  width: 25vw;
 }
 
 .footer svg {
@@ -121,7 +129,6 @@ a h4:hover {
 }
 
 .footer h6 {
-  margin-left: 1rem;
   display: flex;
   align-items: center;
   width: 50vw;
